@@ -10,6 +10,8 @@ app.use(express.json());
 // Basic route
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello, TypeScript + Express!');
+  
 });
+
 
 export default app;

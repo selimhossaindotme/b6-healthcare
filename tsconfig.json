@@ -1,13 +1,21 @@
 {
   "compilerOptions": {
-    "module": "commonjs",                                
+    "module": "preserve",                                
     "rootDir": "./src",
     "outDir": "./dist",  
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "ignoreDeprecations": "6.0",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ]
   },
+  "exclude": [
+    "prisma.config.ts",
+    "migrations"
+  ]
 }
